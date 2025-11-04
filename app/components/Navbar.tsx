@@ -8,42 +8,42 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Sticky container full width */}
-      <div className="sticky top-0 z-50 bg-black/70 backdrop-blur supports-backdrop-filter:bg-black/50">
+      {/* Sticky container full width avec dégradé */}
+      <div className="sticky top-0 z-50 bg-linear-to-b from-black to-transparent backdrop-blur">
         {/* Centered content */}
         <div className="relative w-full max-w-4xl mx-auto px-3 sm:px-5">
           <nav className="relative px-4 sm:px-6 py-3">
-          {/* Conteneur principal: colonne en mobile, rangée en desktop */}
-          <div className="flex items-center justify-between py-2">
-            {/* Logo */}
-            <Link href="/" className="block">
-              <img
-                src="/grunt-logo-white.svg"
-                alt="Grunt logo"
-                className="h-7 w-auto sm:h-8"
-              />
-            </Link>
+            {/* Conteneur principal: colonne en mobile, rangée en desktop */}
+            <div className="flex items-center justify-between py-2">
+              {/* Logo */}
+              <Link href="/" className="block">
+                <img
+                  src="/grunt-logo-white.svg"
+                  alt="Grunt logo"
+                  className="h-7 w-auto sm:h-8"
+                />
+              </Link>
 
-            {/* Menu desktop (masqué en mobile) */}
-            <div className="hidden sm:flex flex-row gap-5">
-              <Link className="text-white/90 hover:text-white transition-colors" href="/video">Vidéo</Link>
-              <Link className="text-white/90 hover:text-white transition-colors" href="/audio">Audio</Link>
-              <Link className="text-white/90 hover:text-white transition-colors" href="/contact">Contact</Link>
+              {/* Menu desktop (masqué en mobile) */}
+              <div className="hidden sm:flex flex-row gap-5">
+                <Link className="text-white/90 hover:text-white transition-colors" href="/video">Vidéo</Link>
+                <Link className="text-white/90 hover:text-white transition-colors" href="/audio">Audio</Link>
+                <Link className="text-white/90 hover:text-white transition-colors" href="/contact">Contact</Link>
+              </div>
+
+              {/* Burger button (visible uniquement en mobile) */}
+              <button
+                className="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-white/10 focus:outline-none transition-colors"
+                aria-expanded={open}
+                aria-controls="mobile-menu"
+                onClick={() => setOpen(true)}
+              >
+                <span className="sr-only">Ouvrir le menu</span>
+                <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                  <path d="M4 7h16M4 12h16M4 17h16" />
+                </svg>
+              </button>
             </div>
-
-            {/* Burger button (visible uniquement en mobile) */}
-            <button
-              className="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-white/10 focus:outline-none transition-colors"
-              aria-expanded={open}
-              aria-controls="mobile-menu"
-              onClick={() => setOpen(true)}
-            >
-              <span className="sr-only">Ouvrir le menu</span>
-              <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-                <path d="M4 7h16M4 12h16M4 17h16" />
-              </svg>
-            </button>
-          </div>
           </nav>
         </div>
       </div>
