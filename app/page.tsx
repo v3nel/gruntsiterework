@@ -48,6 +48,54 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section id="footer" className="flex flex-col bg-black w-full mt-auto py-12 px-52 gap-21">
+        <div className="flex flex-row justify-between text-white">
+          <div className="flex flex-col gap-1">
+            <a className="font-bold">Contenu:</a>
+            <a>Podcasts</a>
+            <a>Grunts</a>
+            <a>Grunts d'or</a>
+            <a>Grunt Hors-Série</a>
+          </div>
+          <div className="flex flex-col gap-1">
+            <a className="font-bold">Contenu:</a>
+            <a>Podcasts</a>
+            <a>Grunts</a>
+            <a>Grunts d'or</a>
+            <a>Grunt Hors-Série</a>
+          </div>
+          <div className="flex flex-col gap-1">
+            <a className="font-bold">Contenu:</a>
+            <a>Podcasts</a>
+            <a>Grunts</a>
+            <a>Grunts d'or</a>
+            <a>Grunt Hors-Série</a>
+          </div>
+          <div className="flex flex-col gap-1">
+            <a className="font-bold">Contenu:</a>
+            <a>Podcasts</a>
+            <a>Grunts</a>
+            <a>Grunts d'or</a>
+            <a>Grunt Hors-Série</a>
+          </div>
+        </div>
+        <div className=" flex flex-col gap-1">
+          <Link href="/" className="block">
+            <img
+              src="/grunt-logo-white.svg"
+              alt="grunt logo"  
+            />
+          </Link>
+          <div className="pt-2 gap-1 flex flex-col">
+            <a className="text-white"> <Link href="/mentions-legales">Mentions Légales / CGU</Link> & <Link href="/cgv">cgv</Link></a>
+            <a className="text-white">le service grünt radio respecte le droit d’auteur. Tous les droits des auteurs des œuvres protégées reproduites et communiquées sur ce site, sont réservés. Sauf autorisation expresse, toute utilisation des œuvres autres que l’écoute dans le cadre du cercle de famille sont interdites.</a>
+          </div>
+          <div className="text-white">
+            <a> Site par <Link href="https://github.com/v3nel" className="hover:font-"> venel._</Link> </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
