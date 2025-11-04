@@ -5,23 +5,23 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Navbar />
 
-    {/* Hero avec image de fond + overlay + contenu superposé */}
-    <section id="header" className="relative">
+      {/* Hero avec image de fond + overlay + contenu superposé */}
+      <section id="header" className="relative -mt-[72px] ">
         {/* Image de couverture */}
         <img
           src="/Gruntfestival4.png"
-          alt="Grünt Festival – 4ème édition"
+          alt="Grünt Festival 4ème édition"
           className="h-[60vh] w-full object-cover sm:h-[70vh]"
         />
 
         {/* Voile sombre pour lisibilité du texte */}
-  <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent pointer-events-none" />
 
         {/* Contenu superposé */}
-        <div className="absolute inset-0 flex items-end">
+        <div className="absolute inset-0 flex items-end pt-[72px]">
           <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 pb-6 sm:pb-10">
             <h1 className="text-white text-3xl sm:text-5xl font-extrabold leading-tight drop-shadow-md">
               Grünt festival : 4ème édition
@@ -48,7 +48,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <section id="Content" className="flex-1">
+        
+      </section>
+      
       <section id="footer" className="flex flex-col bg-black w-full mt-auto py-12 px-52 gap-21">
         <div className="flex flex-row justify-between text-white">
           <div className="flex flex-col gap-1">
