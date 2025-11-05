@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         rockwell: ["var(--font-rokkitt)", "serif"],
+        plex: ["var(--font-plex-mono)", "monospace"],
       },
     },
   },
