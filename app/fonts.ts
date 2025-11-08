@@ -1,8 +1,8 @@
 import { Geist, Geist_Mono, IBM_Plex_Mono } from "next/font/google";
 
 export const plex = IBM_Plex_Mono({
+  weight: ["400","500","600","700"],
   subsets: ["latin"],
-  weight: ["400", "700"],
   variable: "--font-plex-mono",
 });
 
