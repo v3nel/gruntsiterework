@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Grünt Site Rework
+[![wakatime](https://wakatime.com/badge/github/v3nel/gruntsiterework.svg)](https://wakatime.com/badge/github/v3nel/gruntsiterework)
+[![codecov](https://codecov.io/github/v3nel/gruntsiterework/branch/main/graph/badge.svg)](https://codecov.io/github/v3nel/gruntsiterework)
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project is a reimplementation of the Grünt website (originally built on Squarespace) with a modern, maintainable stack. The goal is to provide a flexible front-end and an administrative dashboard to manage podcasts, freestyles and live content, automate publishing workflows and integrate third‑party services (for example YouTube and Ausha).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Primary objectives:
+- Replace the legacy site with a responsive, accessible front-end.
+- Provide a content dashboard for uploads, scheduling and metadata.
+- Integrate publishing pipelines to major platforms (Spotify, Apple Podcasts, YouTube).
+- Maintain clear separation between front-end and back-end responsibilities.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Architecture
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Front-end: Next.js (App Router) and React, Tailwind CSS for styling.
+- Back-end: Express.js (work in progress). Database access and secrets are handled server-side.
+- Development approach: prioritize front-end scaffolding and UX, then adapt the back-end API to match front-end requirements.
+- Optional: Prisma or another ORM for database access, server-side modules for secure data retrieval.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Roadmap
 
-## Learn More
+<ul>
+  <li>
+    <label><input type="checkbox" disabled> Website</label>
+    <ul>
+      <li><label><input type="checkbox" disabled> Home page</label></li>
+      <li><label><input type="checkbox" disabled checked> Contact page</label></li>
+      <li><label><input type="checkbox" disabled> List pages (archive / index)</label></li>
+      <li><label><input type="checkbox" disabled> Detail pages (podcast / episode / article)</label></li>
+    </ul>
+  </li>
+  <li><label><input type="checkbox" disabled> Dashboard (admin interface)</label></li>
+  <li><label><input type="checkbox" disabled> Public API for client consumption</label></li>
+  <li><label><input type="checkbox" disabled> Dashboard API (secure endpoints for admin actions)</label></li>
+  <li><label><input type="checkbox" disabled> Integrations (YouTube, Ausha, analytics)</label></li>
+  <li><label><input type="checkbox" disabled> Authentication and role-based access for the dashboard</label></li>
+</ul>
 
-To learn more about Next.js, take a look at the following resources:
+## Development notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Keep sensitive logic (database credentials, private keys) in server-only modules.
+- Use Server Components for content rendering when possible to improve performance and security.
+- Tailwind CSS is used site-wide; restart the dev server after changing tailwind.config.ts.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For inquiries or collaboration: [me@v3nel.me](mailto:me@v3nel.me)
