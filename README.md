@@ -21,22 +21,16 @@ Primary objectives:
 
 ## Roadmap
 
-<ul>
-  <li>
-    <label><input type="checkbox" disabled> Website</label>
-    <ul>
-      <li><label><input type="checkbox" disabled> Home page</label></li>
-      <li><label><input type="checkbox" disabled checked> Contact page</label></li>
-      <li><label><input type="checkbox" disabled> List pages (archive / index)</label></li>
-      <li><label><input type="checkbox" disabled> Detail pages (podcast / episode / article)</label></li>
-    </ul>
-  </li>
-  <li><label><input type="checkbox" disabled> Dashboard (admin interface)</label></li>
-  <li><label><input type="checkbox" disabled> Public API for client consumption</label></li>
-  <li><label><input type="checkbox" disabled> Dashboard API (secure endpoints for admin actions)</label></li>
-  <li><label><input type="checkbox" disabled> Integrations (YouTube, Ausha, analytics)</label></li>
-  <li><label><input type="checkbox" disabled> Authentication and role-based access for the dashboard</label></li>
-</ul>
+- [ ] Website
+  - [ ] Home page
+  - [x] Contact page
+  - [ ] List pages (archive / index)
+  - [ ] Detail pages (podcast / episode / article)
+- [ ] Dashboard (admin interface)
+- [ ] Public API for client consumption
+- [ ] Dashboard API (secure endpoints for admin actions)
+- [ ] Integrations (YouTube, Ausha, analytics)
+- [ ] Authentication and role-based access for the dashboard
 
 ## Development notes
 
